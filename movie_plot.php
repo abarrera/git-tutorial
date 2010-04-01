@@ -42,7 +42,7 @@ class MoviePlotGenerator {
 		$her_occupation = $this->getRandom(self::$occupations);
 		$her_quirk = $this->getRandom(self::$quirks);
 
-		while ($her_adjective == $his_adjective) {
+		while (($her_adjective == $his_adjective) || ($her_occupation == $his_occupation) || ($her_quirk == $his_quirk)) {
 			$her_adjective = $this->getRandom(self::$adjectives);
                 	$her_occupation = $this->getRandom(self::$occupations);
                 	$her_quirk = $this->getRandom(self::$quirks);
